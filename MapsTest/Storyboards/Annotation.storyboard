@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ek6-CA-x09">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Annotation-->
+        <scene sceneID="hOb-Z4-aKO">
+            <objects>
+                <viewController id="ek6-CA-x09" customClass="AnnotationVC" customModule="MapsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Prv-rm-GR3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Xx-k3-ZUh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Xx-k3-ZUh" firstAttribute="top" secondItem="Prv-rm-GR3" secondAttribute="top" id="CwD-LF-33S"/>
+                            <constraint firstItem="3Xx-k3-ZUh" firstAttribute="leading" secondItem="Prv-rm-GR3" secondAttribute="leading" id="LtP-Wp-ffM"/>
+                            <constraint firstAttribute="trailing" secondItem="3Xx-k3-ZUh" secondAttribute="trailing" id="Thc-ml-YKv"/>
+                            <constraint firstAttribute="bottom" secondItem="3Xx-k3-ZUh" secondAttribute="bottom" id="jIK-W8-ku9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XQS-Cd-gSU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Annotation" image="a" catalog="system" id="AZC-IC-GAx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="3Xx-k3-ZUh" id="H3Q-FT-l5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogI-tB-7Rt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a" catalog="system" width="64" height="64"/>
+    </resources>
+</document>

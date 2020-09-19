@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zcs-Yk-cne">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My LacationVC-->
+        <scene sceneID="tiE-1S-w4g">
+            <objects>
+                <viewController id="ccw-ru-KtH" customClass="MyLacationVC" customModule="MapsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A0B-np-IDf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-NA-h8A">
+                                <rect key="frame" x="1" y="89" width="414" height="572"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-kf-mJs">
+                                <rect key="frame" x="100" y="697" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fWN-gb-zZ5"/>
+                                </constraints>
+                                <state key="normal" title="Show my Lacation">
+                                    <color key="titleColor" red="0.94415861369999998" green="0.34851899739999997" blue="0.16513273119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lacationBtn:" destination="ccw-ru-KtH" eventType="touchUpInside" id="7B6-zG-zgq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lUQ-NA-h8A" firstAttribute="top" secondItem="1ug-Zz-K9U" secondAttribute="top" constant="1" id="6Y7-eq-iTv"/>
+                            <constraint firstItem="1ug-Zz-K9U" firstAttribute="bottom" secondItem="rNQ-kf-mJs" secondAttribute="bottom" constant="86" id="JIE-t1-URj"/>
+                            <constraint firstItem="lUQ-NA-h8A" firstAttribute="leading" secondItem="1ug-Zz-K9U" secondAttribute="leading" constant="1" id="LZ7-3L-MY0"/>
+                            <constraint firstItem="rNQ-kf-mJs" firstAttribute="top" secondItem="lUQ-NA-h8A" secondAttribute="bottom" constant="36" id="Nbj-He-Oz1"/>
+                            <constraint firstItem="lUQ-NA-h8A" firstAttribute="trailing" secondItem="1ug-Zz-K9U" secondAttribute="trailing" constant="1" id="m7g-Aj-XB7"/>
+                            <constraint firstItem="rNQ-kf-mJs" firstAttribute="leading" secondItem="1ug-Zz-K9U" secondAttribute="leading" constant="100" id="mbk-Py-tce"/>
+                            <constraint firstItem="1ug-Zz-K9U" firstAttribute="trailing" secondItem="rNQ-kf-mJs" secondAttribute="trailing" constant="100" id="xRR-V8-JFf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1ug-Zz-K9U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IUu-iU-M6r"/>
+                    <connections>
+                        <outlet property="mapView" destination="lUQ-NA-h8A" id="a3j-Sg-bd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xd2-ph-vbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="-73.660714285714278"/>
+        </scene>
+        <!--My Lacation-->
+        <scene sceneID="F4h-4T-IiC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zcs-Yk-cne" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Lacation" image="location" catalog="system" id="11i-Me-77V">
+                        <color key="badgeColor" red="0.94415861369999998" green="0.34851899739999997" blue="0.16513273119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zgz-tL-Pet">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ccw-ru-KtH" kind="relationship" relationship="rootViewController" id="P0n-Bc-dOX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1C-FG-msK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="-73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

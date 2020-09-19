@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F8D062F823D444F7007CE40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D062F723D444F7007CE40F /* AppDelegate.swift */; };
 		F8D062FA23D444F7007CE40F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D062F923D444F7007CE40F /* SceneDelegate.swift */; };
-		F8D062FC23D444F7007CE40F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D062FB23D444F7007CE40F /* ViewController.swift */; };
+		F8D062FC23D444F7007CE40F /* MyLacationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D062FB23D444F7007CE40F /* MyLacationVC.swift */; };
 		F8D062FF23D444F7007CE40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D062FD23D444F7007CE40F /* Main.storyboard */; };
 		F8D0630123D444F8007CE40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D0630023D444F8007CE40F /* Assets.xcassets */; };
 		F8D0630423D444F8007CE40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D0630223D444F8007CE40F /* LaunchScreen.storyboard */; };
+		F8D0630D23D44895007CE40F /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D0630C23D44895007CE40F /* Location.storyboard */; };
+		F8D0630F23D44C15007CE40F /* Annotation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D0630E23D44C15007CE40F /* Annotation.storyboard */; };
+		F8D0631123D4701A007CE40F /* AnnotationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0631023D4701A007CE40F /* AnnotationVC.swift */; };
+		F8D0631523D470BF007CE40F /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0631423D470BF007CE40F /* Stadium.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8D062F423D444F7007CE40F /* MapsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D062F723D444F7007CE40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D062F923D444F7007CE40F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8D062FB23D444F7007CE40F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8D062FB23D444F7007CE40F /* MyLacationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLacationVC.swift; sourceTree = "<group>"; };
 		F8D062FE23D444F7007CE40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8D0630023D444F8007CE40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D0630323D444F8007CE40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8D0630523D444F8007CE40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D0630C23D44895007CE40F /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		F8D0630E23D44C15007CE40F /* Annotation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Annotation.storyboard; sourceTree = "<group>"; };
+		F8D0631023D4701A007CE40F /* AnnotationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationVC.swift; sourceTree = "<group>"; };
+		F8D0631423D470BF007CE40F /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		F8D062F623D444F7007CE40F /* MapsTest */ = {
 			isa = PBXGroup;
 			children = (
+				F8D0631323D47035007CE40F /* Models */,
+				F8D0630B23D44867007CE40F /* Storyboards */,
+				F8D0631223D47022007CE40F /* Controllers */,
 				F8D062F723D444F7007CE40F /* AppDelegate.swift */,
 				F8D062F923D444F7007CE40F /* SceneDelegate.swift */,
-				F8D062FB23D444F7007CE40F /* ViewController.swift */,
-				F8D062FD23D444F7007CE40F /* Main.storyboard */,
 				F8D0630023D444F8007CE40F /* Assets.xcassets */,
 				F8D0630223D444F8007CE40F /* LaunchScreen.storyboard */,
 				F8D0630523D444F8007CE40F /* Info.plist */,
 			);
 			path = MapsTest;
+			sourceTree = "<group>";
+		};
+		F8D0630B23D44867007CE40F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F8D062FD23D444F7007CE40F /* Main.storyboard */,
+				F8D0630C23D44895007CE40F /* Location.storyboard */,
+				F8D0630E23D44C15007CE40F /* Annotation.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8D0631223D47022007CE40F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D062FB23D444F7007CE40F /* MyLacationVC.swift */,
+				F8D0631023D4701A007CE40F /* AnnotationVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F8D0631323D47035007CE40F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8D0631423D470BF007CE40F /* Stadium.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +164,8 @@
 				F8D0630423D444F8007CE40F /* LaunchScreen.storyboard in Resources */,
 				F8D0630123D444F8007CE40F /* Assets.xcassets in Resources */,
 				F8D062FF23D444F7007CE40F /* Main.storyboard in Resources */,
+				F8D0630D23D44895007CE40F /* Location.storyboard in Resources */,
+				F8D0630F23D44C15007CE40F /* Annotation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D062FC23D444F7007CE40F /* ViewController.swift in Sources */,
+				F8D0631523D470BF007CE40F /* Stadium.swift in Sources */,
+				F8D062FC23D444F7007CE40F /* MyLacationVC.swift in Sources */,
+				F8D0631123D4701A007CE40F /* AnnotationVC.swift in Sources */,
 				F8D062F823D444F7007CE40F /* AppDelegate.swift in Sources */,
 				F8D062FA23D444F7007CE40F /* SceneDelegate.swift in Sources */,
 			);
